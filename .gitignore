@@ -40,3 +40,5 @@ src/main/resources/*.tsv.gz
 # Ignore database files
 data/*.mv.db
 data/*.trace.db
+
+movies.db
