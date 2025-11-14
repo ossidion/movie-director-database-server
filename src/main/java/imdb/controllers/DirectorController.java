@@ -1,8 +1,8 @@
-package com.example.accessing_data_jpa.controllers;
+package imdb.controllers;
 
-import com.example.accessing_data_jpa.entities.Movie;
-import com.example.accessing_data_jpa.entities.MovieDirector;
-import com.example.accessing_data_jpa.repositories.MovieDirectorRepository;
+import imdb.entities.Movie;
+import imdb.entities.MovieDirector;
+import imdb.repositories.MovieDirectorRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

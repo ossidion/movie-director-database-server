@@ -1,7 +1,7 @@
-package com.example.accessing_data_jpa.services;
+package imdb.services;
 
-import com.example.accessing_data_jpa.entities.Person;
-import com.example.accessing_data_jpa.repositories.PersonRepository;
+import imdb.entities.Person;
+import imdb.repositories.PersonRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import jakarta.persistence.EntityManager;

@@ -1,6 +1,6 @@
-package com.example.accessing_data_jpa.repositories;
+package imdb.repositories;
 
-import com.example.accessing_data_jpa.entities.Movie;
+import imdb.entities.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // JpaRepository, an interface which has methods for database access. Spring generates methods such as findById at runtime using proxies, Reflection!

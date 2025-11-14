@@ -1,4 +1,4 @@
-package com.example.accessing_data_jpa.config;
+package imdb.config;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.identity.IdentityColumnSupport;

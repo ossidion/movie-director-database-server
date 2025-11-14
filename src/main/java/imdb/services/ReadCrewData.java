@@ -1,7 +1,7 @@
-package com.example.accessing_data_jpa.services;
+package imdb.services;
 
-import com.example.accessing_data_jpa.entities.Crew;
-import com.example.accessing_data_jpa.repositories.CrewRepository;
+import imdb.entities.Crew;
+import imdb.repositories.CrewRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

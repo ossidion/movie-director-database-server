@@ -1,9 +1,9 @@
-package com.example.accessing_data_jpa.repositories;
+package imdb.repositories;
 
-import com.example.accessing_data_jpa.entities.Crew;
+import imdb.entities.Crew;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
+
 import java.util.stream.Stream;
 
 public interface CrewRepository extends CrudRepository<Crew, String> {

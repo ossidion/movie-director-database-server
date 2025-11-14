@@ -1,13 +1,13 @@
-package com.example.accessing_data_jpa.services;
+package imdb.services;
 
-import com.example.accessing_data_jpa.entities.Crew;
-import com.example.accessing_data_jpa.entities.MovieDirector;
-import com.example.accessing_data_jpa.entities.Movie;
-import com.example.accessing_data_jpa.entities.Person;
-import com.example.accessing_data_jpa.repositories.MovieDirectorRepository;
-import com.example.accessing_data_jpa.repositories.MovieRepository;
-import com.example.accessing_data_jpa.repositories.PersonRepository;
-import com.example.accessing_data_jpa.repositories.CrewRepository;
+import imdb.entities.Crew;
+import imdb.entities.MovieDirector;
+import imdb.entities.Movie;
+import imdb.entities.Person;
+import imdb.repositories.MovieDirectorRepository;
+import imdb.repositories.MovieRepository;
+import imdb.repositories.PersonRepository;
+import imdb.repositories.CrewRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Service;

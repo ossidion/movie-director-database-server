@@ -1,6 +1,6 @@
-package com.example.accessing_data_jpa.repositories;
+package imdb.repositories;
 
-import com.example.accessing_data_jpa.entities.MovieDirector;
+import imdb.entities.MovieDirector;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

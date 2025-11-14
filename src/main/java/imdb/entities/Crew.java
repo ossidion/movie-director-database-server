@@ -1,4 +1,4 @@
-package com.example.accessing_data_jpa.entities;
+package imdb.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

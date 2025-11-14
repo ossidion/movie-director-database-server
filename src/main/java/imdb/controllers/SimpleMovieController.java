@@ -1,7 +1,7 @@
-package com.example.accessing_data_jpa.controllers;
+package imdb.controllers;
 
-import com.example.accessing_data_jpa.entities.Movie;
-import com.example.accessing_data_jpa.repositories.MovieRepository;
+import imdb.entities.Movie;
+import imdb.repositories.MovieRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

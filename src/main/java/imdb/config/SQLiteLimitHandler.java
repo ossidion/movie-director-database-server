@@ -1,4 +1,4 @@
-package com.example.accessing_data_jpa.config;
+package imdb.config;
 
 import org.hibernate.dialect.pagination.AbstractLimitHandler;
 import org.hibernate.query.spi.Limit;

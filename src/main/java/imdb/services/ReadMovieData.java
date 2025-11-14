@@ -1,7 +1,7 @@
-package com.example.accessing_data_jpa.services;
+package imdb.services;
 
-import com.example.accessing_data_jpa.entities.Movie;
-import com.example.accessing_data_jpa.repositories.MovieRepository;
+import imdb.entities.Movie;
+import imdb.repositories.MovieRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

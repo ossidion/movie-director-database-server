@@ -1,9 +1,9 @@
-package com.example.accessing_data_jpa;
+package imdb;
 
-import com.example.accessing_data_jpa.services.ReadCrewData;
-import com.example.accessing_data_jpa.services.ReadMovieData;
-import com.example.accessing_data_jpa.services.ReadPersonData;
-import com.example.accessing_data_jpa.services.BuildMovieDirectorTable;
+import imdb.services.ReadCrewData;
+import imdb.services.ReadMovieData;
+import imdb.services.ReadPersonData;
+import imdb.services.BuildMovieDirectorTable;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,11 +11,11 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EntityScan("com.example.accessing_data_jpa.entities")
-public class AccessingDataJpaApplication {
+@EntityScan("imdb/entities")
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccessingDataJpaApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 
 	// The Application Context manages beans i.e. @Services, @Components, etc.
