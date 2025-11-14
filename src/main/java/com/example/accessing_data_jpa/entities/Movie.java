@@ -7,13 +7,12 @@ import jakarta.persistence.*;
 // - Maps directly to a DB table.
 // - Each instance of Movie is a row in table.
 @Entity
-@Table(name = "movie")
+@Table(name = "movies")
 
 public class Movie {
-    @Id
+    @Id // Hibernate and repositories will look for this.
     @Column(name = "id", nullable = false)
     private String id;
-
     private int ordering;
     private String title;
     private String region;
@@ -22,7 +21,7 @@ public class Movie {
     private String attributes;
     private int isOriginalTitle;
 
-    protected Movie() {}
+    protected Movie() {} // No args constructor for Hibernate to use Reflection in creating objects loaded from the database.
 
     public Movie(String id, int ordering, String title, String region, String language, String types, String attributes, int isOriginalTitle) {
         this.id = id;
@@ -42,6 +41,7 @@ public class Movie {
                 id, ordering, title, region, language, types, attributes, isOriginalTitle);
     }
 
+    // JPA via Hibernate needs these methods.
 
     public String getID() {return id;}
 
@@ -55,8 +55,7 @@ public class Movie {
 
     public String getTypes() {return types;}
 
-    public String getAttributes() {
-        return attributes;}
+    public String getAttributes() {return attributes;}
 
     public int getIsOriginalTitle() {return isOriginalTitle;}
 
