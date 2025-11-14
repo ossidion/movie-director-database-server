@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.11</version>
+		<version>3.2.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -30,29 +30,33 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+		<!-- Spring Boot JPA (includes Hibernate + Jakarta Persistence) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- Spring Boot Web (optional, if you have REST endpoints) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- SQLite JDBC driver -->
 		<dependency>
 			<groupId>org.xerial</groupId>
 			<artifactId>sqlite-jdbc</artifactId>
-			<version>3.46.0.0</version>
+			<version>3.41.2.2</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.hibernate.orm</groupId>
-			<artifactId>hibernate-community-dialects</artifactId>
-		</dependency>
-
-
+		<!-- Testing (optional) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>
