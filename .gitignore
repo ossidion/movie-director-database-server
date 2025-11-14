@@ -1,3 +1,5 @@
+movies.db
+
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -41,4 +43,4 @@ src/main/resources/*.tsv.gz
 data/*.mv.db
 data/*.trace.db
 
-imdb/movies.db
+
